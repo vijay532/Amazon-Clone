@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Header';
 import Home from './Home';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
-
+import Checkout from './Checkout'
 function App() {
   return (
     <Router>
@@ -11,9 +11,9 @@ function App() {
         <Switch>
           <Route path="/checkout">
             <Header/>
-              <p>Hi,This is checkout page</p>
+            <Checkout/>
           </Route> 
-          <Route path="/">
+          <Route path="/">        
             <Header/>
             <Home/>
           </Route> 
