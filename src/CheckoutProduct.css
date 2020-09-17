@@ -4,7 +4,7 @@
 
 } 
 
-.checkoutProduct__info>button{
+.btn{
     margin-top:5px;
     background:#f0c14b;
     border:1px solid;
@@ -34,3 +34,4 @@
     font-size: 17px;
     font-weight: 800;
 }
+
