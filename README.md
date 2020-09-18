@@ -1,4 +1,4 @@
-THE AMAZON CLONE PROJECT CAN BE RUN [HERE](https://clone-68c57.web.app/).
+The AMAZON CLONE Project can be run [HERE](https://clone-68c57.web.app/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
