@@ -1,13 +1,4 @@
-.header {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #131921;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    max-width: 1500px;
-  }
+
   
   .header__logo {
     width: 100px;
@@ -67,4 +58,14 @@
     margin-left: 10px;
     margin-right: 10px;
     color: white;
+  }
+
+    .header {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      background-color: #131921;
+      position: sticky;
+      top: 0;
+      z-index: 100;
   }
