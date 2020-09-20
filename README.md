@@ -2,6 +2,14 @@ The `AMAZON CLONE` Project Deployed [HERE](https://clone-68c57.web.app/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Maine Feature of the project 
+
+    ***login and sign up using firebase auth*** 
+    ***add to basket*** 
+    ***remove from the basket*** 
+    ***payment checkout*** 
+    ***order confirm page***  
+
 ## Available Scripts
 
 In the project directory, you can run:
