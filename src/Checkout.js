@@ -3,7 +3,7 @@ import './Checkout.css'
 import Subtotal from './Subtotal'
 import CheckoutProduct from './CheckoutProduct'
 import { useStateValue } from './StateProvider'
-
+import Payment from './Payment'
 function Checkout() {
     const [{basket,user},dispatch]=useStateValue();  //pulling basket and user from data layer store 
 
@@ -30,7 +30,6 @@ function Checkout() {
             </div>
             <div className="checkout__right">
                 <Subtotal/>
-                
             </div>
         </div>
     );
