@@ -8,7 +8,7 @@ The `AMAZON CLONE` Project Deployed [HERE](https://clone-68c57.web.app/).
 
 #### Remove from Basket
 
-#### Payment Page 
+#### Checkout Page 
 
 #### Order Confirmation
 
