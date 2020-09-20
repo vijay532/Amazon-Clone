@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Maine Feature of the project 
 
-    ***login and sign up using firebase auth*** 
-    ***add to basket*** 
-    ***remove from the basket*** 
-    ***payment checkout*** 
-    ***order confirm page***  
+    *login and sign up using firebase auth 
+    add to basket 
+    remove from the basket 
+    payment checkout 
+    order confirm page*
 
 ## Available Scripts
 
