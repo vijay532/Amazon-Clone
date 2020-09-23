@@ -10,8 +10,10 @@ import { useStateValue } from './StateProvider';
 import Payment from './Payment'
 import {loadStripe} from '@stripe/stripe-js';
 import {Elements} from '@stripe/react-stripe-js';  //higher order function it wraps the payment elements
-const promise=loadStripe("pk_test_51HTMeLCEVILZq205YZDBfOizV7ZTCuvs43VszjE7XGDS5xrG3rMCtAf4yJOsbDkaBbNXQhmlon5IRpjGYA3ygTc700ARxvdINU");
+import Orders from './Orders';
 
+
+const promise=loadStripe("pk_test_51HUQWCAaAMmE19tvOc8m3Wn6drcd8S4RtmrfhmbyILDYHVbnVNMlPddoMGaRvtW12BhXFEL8P0CLi0SacCW0ClBl00XcUMCtSd");
 function App() {
 
   const [{}, dispatch] = useStateValue();
@@ -26,7 +28,7 @@ function App() {
         // the user just logged in / the user was logged in
 
         dispatch({
-          type: "SET_USER",
+            type: "SET_USER",
           user: authUser,
         });
       } else {
@@ -57,7 +59,11 @@ function App() {
             <Elements stripe={promise}>    
               <Payment/>
             </Elements>
-          </Route> 
+          </Route>
+          <Route path="/orders">     
+            <Header/>   
+            <Orders/>
+          </Route>  
           <Route path="/">        
             <Header/>
             <Home/>
