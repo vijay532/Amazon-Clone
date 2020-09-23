@@ -3,7 +3,9 @@ import './Checkout.css'
 import Subtotal from './Subtotal'
 import CheckoutProduct from './CheckoutProduct'
 import { useStateValue } from './StateProvider'
+import FlipMove from 'react-flip-move';
 import Payment from './Payment'
+
 function Checkout() {
     const [{basket,user},dispatch]=useStateValue();  //pulling basket and user from data layer store 
 
@@ -15,17 +17,18 @@ function Checkout() {
                     <h3>Hello, {user?.email}</h3>
                     <h2 className="checkout__title">Your shopping basket</h2> 
                     {/* BasketItem */}
-                    { basket.map(item=>(
-                        <CheckoutProduct
-                        id={item.id}
-                        title={item.title}
-                        image={item.image}
-                        price={item.price}
-                        rating={item.rating}
-                        />
-                    ))
-                    }
-                        
+                    
+                        { basket.map(item=>(
+                            <CheckoutProduct
+                            id={item.id}
+                            title={item.title}
+                            image={item.image}
+                            price={item.price}
+                            rating={item.rating}
+                            />
+                        ))
+                        }
+                                            
                 </div>
             </div>
             <div className="checkout__right">
