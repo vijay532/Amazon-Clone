@@ -60,17 +60,16 @@
     color: white;
   }
 
-    @media (max-width:2000px){ 
+   
       .header {
       height: 60px;
       display: flex;
       align-items: center;
       background-color: #131921;
-      position: sticky;
+      position:sticky;
       top: 0;
       z-index: 100;
+      width:100%;
+      /* max-width: 1500px; */
       }
-  }
-
-  @media ()
 
