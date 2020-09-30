@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
 
@@ -53,10 +54,10 @@ function Header() {
 
         <Link to="/checkout">
           <div className="header__optionBasket">
-            <ShoppingBasketIcon />
-            <span className="header__optionLineTwo header__basketCount">
+          <span className="header__optionLineTwo header__basketCount">
               {basket?.length}
             </span>
+            <ShoppingCartIcon/>
           </div>
         </Link>
       </div>
