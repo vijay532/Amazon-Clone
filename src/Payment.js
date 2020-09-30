@@ -28,7 +28,7 @@ function Payment() {
             const response = await axios({
                 method: 'post',
                 // Stripe expects the total in a currencies subunits
-                url: `/payments/create?total=${calculateItems(basket) * 100}`
+                url: `/payments/create?total=₹{calculateItems(basket) * 100}`
             });
             setClientSecret(response.data.clientSecret)
         }
@@ -51,16 +51,16 @@ function Payment() {
         }).then(({ paymentIntent }) => {
             // paymentIntent = payment confirmation
 
-            db
-              .collection('users')
-              .doc(user?.uid)
-              .collection('orders')
-              .doc(paymentIntent.id)
-              .set({
-                  basket: basket,
-                  amount: paymentIntent.amount,
-                  created: paymentIntent.created
-              })
+            // db
+            //   .collection('users')
+            //   .doc(user?.uid)
+            //   .collection('orders')
+            //   .doc(paymentIntent.id)
+            //   .set({
+            //       basket: basket,
+            //       amount: paymentIntent.amount,
+            //       created: paymentIntent.created
+            //   })
 
             setSucceeded(true);
             setError(null)
