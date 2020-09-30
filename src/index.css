@@ -1,7 +1,8 @@
+
 *{
     margin:0;
+    /* padding-right:10px; */
 }
-
 body {
  @media only screen (max-width:1500px);
  margin: 0;
